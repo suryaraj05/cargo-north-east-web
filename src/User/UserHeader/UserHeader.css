@@ -1,0 +1,34 @@
+/* Apply styles to the user header */
+.user-header {
+    background-color: #233e93;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+  }
+  
+  /* Reduce the gap between cards */
+  .card-row {
+    display: flex;
+    gap: 1rem; /* Adjust gap between columns as needed */
+  }
+  
+  .card-row .col {
+    padding-right: 0.5rem; /* Adjust padding if needed */
+    padding-left: 0.5rem;
+  }
+  
+  /* Customize card link (if necessary) */
+  .card-row a {
+    text-decoration: none; /* Remove any underline from the link */
+  }
+  
+  .card-row .col .card-component {
+    /* Optional: Add custom card styles */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Example of adding a shadow */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s ease;
+  }
+  
+  .card-row .col .card-component:hover {
+    transform: translateY(-5px); /* Add hover effect */
+  }
+  

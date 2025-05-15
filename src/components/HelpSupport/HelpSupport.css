@@ -1,0 +1,127 @@
+/* HelpSupport.css */
+
+/* General Container */
+.help-support-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin-top: 60px; /* Adjust for Navbar */
+    background-color: #f9f9f9;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* FAQ Section */
+.faqs {
+    margin-bottom: 30px;
+}
+
+.faqs ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.faqs li {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.faqs li strong {
+    font-size: 16px;
+    color: #0056b3;
+}
+
+.faqs li p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Contact Support Section */
+.contact-support {
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-support .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-support label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-support input,
+.contact-support textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.contact-support textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact-support button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-support button:hover {
+    background-color: #007bff;
+}
+
+/* Guides Section */
+.guides {
+    margin-bottom: 30px;
+}
+
+.guides ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.guides li {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.guides li strong {
+    font-size: 16px;
+    color: #0056b3;
+}
+
+.guides li p {
+    font-size: 14px;
+    color: #555;
+}

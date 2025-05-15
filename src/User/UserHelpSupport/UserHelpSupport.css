@@ -1,0 +1,124 @@
+/* Help & Support Page */
+.user-help-support-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* FAQs Section */
+.faqs-section {
+    margin-bottom: 30px;
+}
+
+.faqs-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.faqs-section .faq-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.faqs-section .faq-item strong {
+    font-size: 16px;
+    color: #0056b3;
+}
+
+.faqs-section .faq-item p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Contact Support Section */
+.contact-support {
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-support .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-support label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-support input,
+.contact-support textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.contact-support textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact-support button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-support button:hover {
+    background-color: #007bff;
+}
+
+/* Guides Section */
+.guides-section {
+    margin-bottom: 30px;
+}
+
+.guides-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.guides-section .guide-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.guides-section .guide-item strong {
+    font-size: 16px;
+    color: #0056b3;
+}
+
+.guides-section .guide-item p {
+    font-size: 14px;
+    color: #555;
+}

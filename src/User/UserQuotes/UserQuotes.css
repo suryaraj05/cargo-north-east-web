@@ -1,0 +1,79 @@
+/* Manage Quotes Page */
+.user-quotes-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+/* Quotes Section */
+.quotes-section {
+    margin-bottom: 30px;
+}
+
+.quotes-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.user-quotes-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-quotes-table th,
+.user-quotes-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.user-quotes-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.user-quotes-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Button Styling */
+.user-quotes-table button {
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; /* Space between buttons */
+    background-color: #0056b3;
+    color: white;
+    border: none;
+}
+
+.user-quotes-table button:hover {
+    background-color: #007bff;
+}
+
+.user-quotes-table button.decline-btn {
+    background-color: #c9302c; /* Red for decline */
+}
+
+.user-quotes-table button.decline-btn:hover {
+    background-color: #d9534f;
+}
+
+.user-quotes-table button.negotiate-btn {
+    background-color: #28a745; /* Green for negotiate */
+}
+
+.user-quotes-table button.negotiate-btn:hover {
+    background-color: #34c759;
+}

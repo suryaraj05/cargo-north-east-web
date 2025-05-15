@@ -1,0 +1,55 @@
+/* Book New Request Page */
+.user-book-new-request-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.user-form-group {
+    margin-bottom: 15px;
+}
+
+.user-form-group label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.user-form-group input,
+.user-form-group select,
+.user-form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.user-form-group textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+.user-submit-request-button {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.user-submit-request-button:hover {
+    background-color: #007bff;
+}

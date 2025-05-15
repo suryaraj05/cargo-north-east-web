@@ -1,0 +1,156 @@
+
+.shipment-details-form {
+  font-family: Arial, sans-serif;
+  max-width: 100%;
+  margin:  auto;
+  padding: 10px 10px 10px 50px ;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.shipment-details-form h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.shipment-details-form h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Section Spacing */
+.section {
+  margin-bottom: 30px;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+/* Input Fields */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+input[type="file"] {
+  margin-top: 10px;
+}
+
+/* Buttons */
+button {
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #0056b3;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #007bff;
+}
+
+.add-button {
+  margin-top: 10px;
+}
+
+/* Radio & Toggle Buttons */
+.radio-group,
+.toggle-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.radio-group label,
+.toggle-group label {
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.radio-group input,
+.toggle-group input {
+  margin-right: 8px;
+}
+
+Two-Column Layout
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.column {
+  flex: 1;
+}
+
+.column label {
+  margin-bottom: 5px;
+}
+
+.column input,
+.column select {
+  width: 100%;
+}
+
+/* Dynamic Sections */
+.dynamic-section {
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.dynamic-section:last-child {
+  margin-bottom: 0;
+}
+
+/* Warning Text */
+.warning {
+  font-size: 14px;
+  color: #d9534f; /* Bootstrap Danger Red */
+  margin-bottom: 15px;
+}
+
+/* Additional Services */
+.help-text {
+  font-size: 12px;
+  color: #888;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .row {
+      flex-direction: column;
+  }
+
+  button {
+      width: 100%;
+  }
+}
