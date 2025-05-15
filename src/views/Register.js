@@ -64,184 +64,86 @@ const Register = () => {
   };
 
   return (
-    <div className="auth-page">
-      <div className="auth-container">
-        <Card className="auth-card">
-          <CardBody className="px-lg-5 py-lg-5">
-            <div className="text-center mb-4">
-              <h1 className="text-white">Create Account</h1>
-              <p className="text-lead text-light">
-                Sign up to get started
-              </p>
-            </div>
-            
-            <Form role="form" onSubmit={handleSubmit}>
-              {error && <Alert color="danger">{error}</Alert>}
-              
-              <FormGroup className="mb-4">
-                <InputGroup className="input-group-alternative">
-                  <InputGroupAddon addonType="prepend">
-                    <InputGroupText>
-                      <i className="ni ni-hat-3" />
-                    </InputGroupText>
-                  </InputGroupAddon>
-                  <Input
-                    placeholder="Name"
-                    type="text"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                  />
-                </InputGroup>
-              </FormGroup>
-              
-              <FormGroup className="mb-4">
-                <InputGroup className="input-group-alternative">
-                  <InputGroupAddon addonType="prepend">
-                    <InputGroupText>
-                      <i className="ni ni-email-83" />
-                    </InputGroupText>
-                  </InputGroupAddon>
-                  <Input
-                    placeholder="Email"
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                  />
-                </InputGroup>
-              </FormGroup>
-              
-              <FormGroup className="mb-4">
-                <InputGroup className="input-group-alternative">
-                  <InputGroupAddon addonType="prepend">
-                    <InputGroupText>
-                      <i className="ni ni-lock-circle-open" />
-                    </InputGroupText>
-                  </InputGroupAddon>
-                  <Input
-                    placeholder="Password"
-                    type="password"
-                    name="password"
-                    value={formData.password}
-                    onChange={handleChange}
-                    required
-                  />
-                </InputGroup>
-              </FormGroup>
-              
-              <FormGroup className="mb-4">
-                <InputGroup className="input-group-alternative">
-                  <InputGroupAddon addonType="prepend">
-                    <InputGroupText>
-                      <i className="ni ni-lock-circle-open" />
-                    </InputGroupText>
-                  </InputGroupAddon>
-                  <Input
-                    placeholder="Confirm Password"
-                    type="password"
-                    name="confirmPassword"
-                    value={formData.confirmPassword}
-                    onChange={handleChange}
-                    required
-                  />
-                </InputGroup>
-              </FormGroup>
-              
-              <div className="text-center">
-                <Button 
-                  className="my-4 auth-button" 
-                  color="primary" 
-                  type="submit"
-                  disabled={loading}
-                  block
-                >
-                  {loading ? "Creating account..." : "Create account"}
-                </Button>
-              </div>
-            </Form>
-            
-            <div className="text-center mt-4">
-              <p className="text-light">
-                Already have an account?{" "}
-                <a
-                  href="#pablo"
-                  className="text-primary"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    navigate("/auth/login");
-                  }}
-                >
-                  Sign in
-                </a>
-              </p>
-            </div>
-          </CardBody>
-        </Card>
+    <div style={{
+      minHeight: '100vh',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      background: '#172b4d',
+    }}>
+      <div style={{ width: 320, background: '#fff', padding: 24, borderRadius: 8, boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
+        <div style={{ textAlign: 'center', marginBottom: 24 }}>
+          <h2 style={{ margin: 0, color: '#22336b' }}>Sign Up</h2>
+        </div>
+        <Form onSubmit={handleSubmit}>
+          {error && <Alert color="danger">{error}</Alert>}
+          <FormGroup className="mb-3">
+            <Input
+              placeholder="Name"
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+              autoFocus
+            />
+          </FormGroup>
+          <FormGroup className="mb-3">
+            <Input
+              placeholder="Email"
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          </FormGroup>
+          <FormGroup className="mb-3">
+            <Input
+              placeholder="Password"
+              type="password"
+              name="password"
+              value={formData.password}
+              onChange={handleChange}
+              required
+            />
+          </FormGroup>
+          <FormGroup className="mb-3">
+            <Input
+              placeholder="Confirm Password"
+              type="password"
+              name="confirmPassword"
+              value={formData.confirmPassword}
+              onChange={handleChange}
+              required
+            />
+          </FormGroup>
+          <Button
+            color="primary"
+            type="submit"
+            block
+            disabled={loading}
+            style={{ background: '#22336b', border: 'none', fontWeight: 600 }}
+          >
+            {loading ? "Creating account..." : "Sign up"}
+          </Button>
+        </Form>
+        <div style={{ textAlign: 'center', marginTop: 16 }}>
+          <span style={{ color: '#000', fontSize: 14 }}>
+            Already have an account?{' '}
+            <a
+              href="#pablo"
+              style={{ color: '#5e72e4' }}
+              onClick={e => {
+                e.preventDefault();
+                navigate("/auth/login");
+              }}
+            >
+              Sign in
+            </a>
+          </span>
+        </div>
       </div>
-
-      <style jsx>{`
-        .auth-page {
-          min-height: 100vh;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          background: linear-gradient(87deg, #172b4d 0, #1a174d 100%) !important;
-          padding: 2rem;
-        }
-        
-        .auth-container {
-          width: 100%;
-          max-width: 400px;
-        }
-        
-        .auth-card {
-          background: rgba(255, 255, 255, 0.1) !important;
-          backdrop-filter: blur(10px);
-          border: none;
-          border-radius: 1rem;
-        }
-        
-        .auth-button {
-          background: #5e72e4 !important;
-          border: none;
-          padding: 0.75rem;
-          font-weight: 600;
-          transition: all 0.2s;
-        }
-        
-        .auth-button:hover {
-          background: #4a5cd1 !important;
-          transform: translateY(-1px);
-        }
-        
-        .input-group-alternative {
-          background: rgba(255, 255, 255, 0.1);
-          border: none;
-          border-radius: 0.5rem;
-        }
-        
-        .input-group-alternative .form-control {
-          background: transparent;
-          color: white;
-        }
-        
-        .input-group-alternative .input-group-text {
-          background: transparent;
-          border: none;
-          color: #8898aa;
-        }
-        
-        .input-group-alternative .form-control::placeholder {
-          color: #8898aa;
-        }
-        
-        .text-primary {
-          color: #5e72e4 !important;
-        }
-      `}</style>
     </div>
   );
 };

@@ -88,7 +88,7 @@ const MinimalSignin = () => {
               style={{ color: '#5e72e4' }}
               onClick={e => {
                 e.preventDefault();
-                navigate("/minimal-signup");
+                navigate("/auth/register");
               }}
             >
               Sign up
